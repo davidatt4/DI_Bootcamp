@@ -28,3 +28,11 @@ macdonald.add_animal('sheep')
 macdonald.add_animal('sheep')
 macdonald.add_animal('goat', 12)
 print(macdonald.get_short_info())
+print("{:<15} {:<5}".format("Animal", "Quantity"))
+for animal_type, quantity in macdonald.animals.items():
+    print("{:<15} {:<5}".format(animal_type, quantity))
+animal_types = macdonald.get_animal_types()
+print("Animal types:", animal_types)
+
+short_info = macdonald.get_short_info()
+print(short_info)
